@@ -20,9 +20,6 @@ const Images=()=>{
     const handleSearch=()=>{
         setSearching(searching)
     }
-    const handleBookMark=()=>{
-        
-    }
     return(
        <div className="container">
         <div className="heading">
@@ -39,7 +36,7 @@ const Images=()=>{
               images.map((image)=>{
                 const imgUrl=`https://farm${image.farm}.staticflickr.com/${image.server}/${image.id}_${image.secret}.jpg`
                 return(
-                    <img key={image.id} src={imgUrl} alt="pictures" id="hoverImg" onClick={handleBookMark}/>
+                    <img key={image.id} src={imgUrl} alt="pictures" id="hoverImg"/>
                 )
               })
               }
